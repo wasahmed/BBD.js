@@ -1,0 +1,33 @@
+////USING UNDEFINED////
+You can use undefined to determine whether a variable has a value.
+    > undefined value converts to NaN when used in numeric context
+    > undefined value behaves as false when used in a boolean context
+
+////VARIABLE SCOPE////
+When you declare a variable outside of any function, it is called a global variable,
+because it is available to any other code in the current document. When you declare
+a variable within a function, it is called a local variable, because it is available
+only within that function
+
+    >var : JavaScript before ES2015 does not have block statement scope; rather, a variable 
+    declared within a block is local to the function (or global scope) that the block resides 
+    within
+
+    >let : introduced for block scope
+
+    >variable hoisting (var)
+    variables in JavaScript are in a sense "hoisted" or lifted to the top of the function or statement.
+    However, variables that are hoisted will return a value of undefined. 
+    So even if you declare and initialize after you use or refer to this variable, it will still return undefined.
+    look @ example
+    Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible.
+
+    >function hoisting works for function declaration, not for function expressions
+
+////DATA TYPES////
+JavaScript is a dynamically typed language. That means you don't have to specify the data type of a variable when you declare
+it, and data types are converted automatically as needed during script execution.
+
+////Exception Handling////
+You can throw exceptions using the throw statement and handle them using the try...catch statements.
+
