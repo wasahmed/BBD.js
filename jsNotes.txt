@@ -31,3 +31,16 @@ it, and data types are converted automatically as needed during script execution
 ////Exception Handling////
 You can throw exceptions using the throw statement and handle them using the try...catch statements.
 
+////Promises////
+
+////Loops////
+    The continue statement can be used to restart a loop. When you use continue within a loop or switch,
+    it terminates the current iteration of the innermost enclosing loop and continues execution of the
+    loop with the next iteration. In contrast to the break statement, continue does not terminate 
+    the execution of the loop entirely. For example, in a for loop, it jumps to the increment-expression.
+
+    >The for...in statement iterates a specified variable over all the enumerable properties of an object. 
+    For each distinct property, JavaScript executes the specified statements (use for objs)
+
+    >The for...of statement creates a loop iterating over iterable objects, invoking a custom iteration 
+    hook with statements to be executed for the value of each distinct property. (use for arrays)
