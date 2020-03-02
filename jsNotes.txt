@@ -44,3 +44,44 @@ You can throw exceptions using the throw statement and handle them using the try
 
     >The for...of statement creates a loop iterating over iterable objects, invoking a custom iteration 
     hook with statements to be executed for the value of each distinct property. (use for arrays)
+
+////Nested functions////
+    >You can nest a function within a function. The nested (inner) function is private to its containing 
+    (outer) function. It also forms a closure. A closure is an expression (typically a function) that can
+     have free variables together with an environment that binds those variables (that "closes" the expression).
+
+    Since a nested function is a closure, this means that a nested function can "inherit" the arguments and variables 
+    of its containing function. In other words, the inner function contains the scope of the outer function.
+
+    To summarize:
+
+    The inner function can be accessed only from statements in the outer function.
+    The inner function forms a closure: the inner function can use the arguments and 
+    variables of the outer function, while the outer function cannot use the arguments and variables of the inner function.
+
+////Closures//// ??? What are closures used for, how do they compare to object getters and setters
+Closures are one of the most powerful features of JavaScript. JavaScript allows for the nesting of functions and grants the inner
+function full access to all the variables and functions defined inside the outer function (and all other variables and functions that 
+the outer function has access to). However, the outer function does not have access to the variables and functions defined inside the 
+inner function. This provides a sort of encapsulation for the variables of the inner function. Also, since the inner function has access 
+to the scope of the outer function, the variables and functions defined in the outer function will live longer than the duration of the 
+inner function execution, if the inner function manages to survive beyond the life of the outer function. A closure is created when the 
+inner function is somehow made available to any scope outside the outer function.
+
+////Date time////
+    var dateObjectName = new Date([parameters]);
+    where dateObjectName is the name of the Date object being created; it can be a new object or a property of an existing object.
+
+    Calling Date without the new keyword returns a string representing the current date and time.
+
+////Strings///
+    > are imutable therefore can't change single characters
+    > string object vs string literal
+
+////JavaScript objects////
+    >In JavaScript, an object is a standalone entity, with properties and a type.Compare it with a cup, for example.
+     A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same 
+     way, JavaScript objects can have properties, which define their characteristics.
+
+////Classes////
+    >Class declarations are not hoisted like function declarations
